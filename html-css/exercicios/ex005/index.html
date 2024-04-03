@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark {
+            background-color: lightsalmon;
+        }
+
+        body {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    Nessa frase temos um &lt;b&gt<b> termo em negrito
+    </b>&lt;/b><!--tag não semantica, ou seja, não tem significado, apenas forma-->
+    <p>Nesta frase, tenho um &lt;strong&gt; <strong>termo em destaque </strong>&lt;/strong&gt;</p>
+    <!--Com strong você altera semânticamente no HTML, quer dizer que aquela palavra tem um destaque-->
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um &lt;i&gt;<i> termo em itálico </i>&lt;/i&gt;</p><!--não semantico-->
+    <p>Nesta frase, temos um &lt;em&gt;<em> termo em ênfase </em>&lt;/em&gt;</p>
+    <p>Podemos criar também &lt;mark&gt;<mark style="background-color: lime;"> um texto marcado </mark>&lt;/mark&gt;
+    </p>
+    <!--podemos colocar parâmetros de css na tag html, por exemplo na marcação de texto-->
+    <p>Podemos criar também um padrão de cor no head.<mark> Este texto está marcado com a configuração em CSS</mark>
+    </p>
+    <p>
+        &lt;style&gt;
+        <br>mark {
+        <br>background-color: lightsalmon;
+        <br>}
+        <br>&lt;/style&gt;
+    </p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um &lt;big&gt;<big> texto grande </big>&lt;/big&gt; e um &lt;small&gt;<small> texto pequeno
+        </small>&lt;/small&gt; nesse parágrafo</p>
+    <!--O big já está um pouco obsoleto pois não da um sentido, já o small ainda é utilizado por ter um sentido semântico por exemplo de ler as letras pequenas de um contrato, não haveria necessidade de aumentar as letrar por algo-->
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar &lt;del&gt;<del> um texto como excluido </del>&lt;/del&gt; para indicar que ele deve ser lido, mas
+        não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar &lt;ins&gt;<ins> um texto como inserido </ins>&lt;/ins&gt; para dar uma ênfase e indicar que ele
+        foi adicionado depois
+    </p>
+    <p>Podemos representar também um texto sublinhado com a tag &lt;u&gt;</p><!--não semântica-->
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>&lt;sup&gt; 20+3 &lt;/sup&gt;</sup></p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>&lt;sub&gt; 2 &lt;/sub&gt;</sub>O</p>
+</body>
+
+</html>
