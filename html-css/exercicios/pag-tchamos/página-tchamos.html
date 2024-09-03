@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Amas?</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            background-image: linear-gradient(to bottom right, #ffb6c1, #87ceeb);
+            font-family: 'Brush Script MT';
+        }
+
+        .container {
+            text-align: center;
+            color: #333;
+        }
+
+        .test-info {
+            font-size: 35px;
+            margin-bottom: 70px;
+            color: #333;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            animation: floatUpDown 3s ease-in-out infinite alternate;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 200px;
+            color: #333;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            animation: floatUpDown 3s ease-in-out infinite alternate;
+        }
+
+        button {
+            margin: px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: ;
+            border-radius: 15px;
+            background-color: #dc3545;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: absolute;
+        }
+
+        button:hover {
+            background-color: #c82333;
+        }
+
+        #tchamosBtn {
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #naoTchamosBtn {
+            display: block;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #heartContainer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            z-index: 9999;
+            transition: transform 1s ease;
+        }
+
+        .heart {
+            width: 800px; /* Aumentei ainda mais o tamanho do coração */
+            height: 720px; /* Aumentei ainda mais o tamanho do coração */
+            position: relative;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: '';
+            width: 400px; /* Aumentei ainda mais o tamanho do coração */
+            height: 640px; /* Aumentei ainda mais o tamanho do coração */
+            background-color: #fc2e6a;
+            border-radius: 400px 400px 0 0; /* Ajustei a borda para parecer um coração */
+            position: absolute;
+            top: 0;
+        }
+
+        .heart:before {
+            left: 400px; /* Ajustei a posição do antes para o tamanho do coração */
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        .heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .heart-image {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40%;
+            height: 50%;
+            z-index: 1;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(0, -5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="test-info">Teste da verdade. O teste não deixa você mentir a respeito do seu verdadeiro sentimento...</div>
+
+        <h1>Me amas?</h1>
+        <button id="tchamosBtn">Tchamos</button>
+        <button id="naoTchamosBtn">Não Tchamos</button>
+    </div>
+
+    <div id="heartContainer" class="heart-container">
+        <div class="heart"></div>
+        <img src="f141a4bc-0728-4a62-a957-5ed5670aa09a.jpg" alt="Imagem" class="heart-image">
+    </div>
+
+    <audio id="musica" src="Velha Infância (2004 Digital Remaster).mp3"></audio> <!-- Adicionado para reproduzir a música "Velha Infância" -->
+
+    <script>
+        const tchamosBtn = document.getElementById('tchamosBtn');
+        const naoTchamosBtn = document.getElementById('naoTchamosBtn');
+        const heartContainer = document.getElementById('heartContainer');
+        const contentContainer = document.getElementById('content');
+        const musica = document.getElementById('musica'); // Adicionado para acessar o elemento de áudio
+
+        let isTchamosClicked = false;
+
+        function reposicionarBotao() {
+            const randomX = Math.random() * (window.innerWidth - naoTchamosBtn.offsetWidth);
+            const randomY = Math.random() * (window.innerHeight - naoTchamosBtn.offsetHeight);
+            naoTchamosBtn.style.left = randomX + 'px';
+            naoTchamosBtn.style.top = randomY + 'px';
+        }
+
+        naoTchamosBtn.addEventListener('mouseenter', () => {
+            if (!isTchamosClicked) {
+                reposicionarBotao();
+            }
+        });
+
+        tchamosBtn.addEventListener('click', () => {
+            if (!isTchamosClicked) {
+                isTchamosClicked = true;
+                contentContainer.style.display = 'none';
+                heartContainer.style.display = 'block';
+                setTimeout(() => {
+                    heartContainer.style.transform = 'translate(-50%, -50%) scale(1)';
+                }, 100);
+
+                // Inicia a reprodução da música
+                musica.play();
+            }
+        });
+    </script>
+</body>
+</html>
