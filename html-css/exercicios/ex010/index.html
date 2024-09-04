@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+
+<body>
+    <h1>Imagens que se adaptam sozinhas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador</p>
+    <picture>
+        <!--sempre os sources precisam estar em ordem, o menor mais acima e os maiores mais abaixo-->
+        <!--o tamanho de pixels é determinado pelo tamanho da imagem utilizada, no caso, pelo GIMP criamos as imagens de 300, 700 e 1000px-->
+        <source media="(max-width: 750px)" srcset="imagens/imagemP.png" type="image/png">
+        <!--o source media type sempre começa com o min, e pixel colocamos 50px a mais para a barra de rolamento-->
+        <source media="(max-width: 1050px)" srcset="imagens/imagemM.png" type="image/png">
+        <!--a tag source serve para alterar o tamanho da mídia a depender do zoom ou tamanho dos dispositivos-->
+        <img src="imagens/imagemG.png" alt="imagem flexível">
+    </picture>
+</body>
+
+</html>
