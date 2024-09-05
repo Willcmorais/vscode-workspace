@@ -5,13 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vídeo 1</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.773);
+            width: 1200px;
+            margin: 0 auto;
+
+            p {
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: rgb(255, 255, 255);
+            }
+
+            h1 {
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: rgb(255, 255, 255);
+            }
+
+            .video-container {
+                position: relative;
+                height: 500px;
+            }
+
+            .video-4 {
+                position: absolute;
+                top: 70px;
+                left: 300px;
+            }
+
+            .image-container {
+                position: relative;
+                height: 100px;
+            }
+
+            .image-4 {
+                position: absolute;
+                top: 25px;
+                left: 570px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <iframe class="video-4" width="300" height="180" src="https://www.youtube.com/embed/4T9haYqBkHw?si=9vIxQpchjj2YKoUZ"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Vídeo exemplo 4</h1>
+    <p>Hayes Steel - CHUVA QUE CAI [Universo Musical]</p>
+
+    <div class="video-container">
+        <iframe class="video-4" width="600" height="360"
+            src="https://www.youtube.com/embed/4T9haYqBkHw?si=CIeOHMXOAq9Tg49m" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="image-container">
+        <a href="index.html"><img class="image-4" width="60" src="icones/deixou.png" alt="Clique para voltar"></a>
+        <p>Voltar</p>
+    </div>
+
+    <p><a href="https://www.youtube.com/watch?v=4T9haYqBkHw" style="color: aliceblue;" target="_blank"
+            rel="external">Clique e assista pelo Youtube</a></p>
 </body>
 
 </html>
