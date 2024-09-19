@@ -1,0 +1,54 @@
+@charset "utf8";
+
+* {
+    /*safe combination, ele usa a primeira letra q achar*/
+    font-family: "";
+}
+
+body {
+    background-image: linear-gradient(to bottom, #45C4B0, #9AEBA3, #DAFDBA);
+    background-attachment: fixed;
+}
+
+img {
+    /* As imagens são inline por padrão, então precisamos torná-las block */
+    display: block;
+    /* Centraliza horizontalmente */
+    margin: 0 auto;
+}
+
+main {
+    background-color: white;
+    /*arredonda as bordas*/
+    border-radius: 10px;
+    /*1 parametro é o lado da sombra, 2 é para baixo, 3 é o quanto espalha e 4 o quanto de transparência tem(ou cor)*/
+    box-shadow: 5px 5px 15px rgba(35, 99, 90, 0.612);
+    /*largura do recorte*/
+    width: 600px;
+    /*distancia das bordas com o conteúdo*/
+    padding: 20px;
+    /*altera automaticamente a margem para o centro da tela*/
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #13678A;
+    /*mesmos parametros para o box-shadow*/
+    text-shadow: 1px 1px 2px rgba(13, 72, 97, 0.586);
+}
+
+h2 {
+    color: #012030;
+    text-shadow: 1px 1px 2px #01203094;
+}
+
+h3 {
+    text-align: center;
+    color: #13678A;
+    text-shadow: 1px 1px 2px #0d455d83;
+}
+
+p {
+    text-align: justify;
+}

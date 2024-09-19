@@ -1,0 +1,61 @@
+@charset "utf8";
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #8FA3FF, #071226);
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    /* Espaço entre os elementos */
+}
+
+img {
+    /* As imagens são inline por padrão, então precisamos torná-las block */
+    display: block;
+    /* Centraliza horizontalmente */
+    margin: 0 auto;
+}
+
+main {
+    background-color: white;
+    /*arredonda as bordas*/
+    border-radius: 10px;
+    /*1 parametro é o lado da sombra, 2 é para baixo, 3 é o quanto espalha e 4 o quanto de transparência tem(ou cor)*/
+    box-shadow: 5px 5px 15px #0d0f40a1;
+    /*largura do recorte*/
+    width: 600px;
+    /*distancia das bordas com o conteúdo*/
+    padding: 10px;
+    /*altera automaticamente a margem para o centro da tela*/
+    margin: auto;
+    flex: 1;
+    /* Faz com que os elementos cresçam uniformemente */
+}
+
+h1 {
+    text-align: center;
+    color: #071226;
+    /*mesmos parametros para o box-shadow*/
+    text-shadow: 1px 1px 2px #071226ac;
+}
+
+h2 {
+    color: #766CFF;
+    text-shadow: 1px 1px 2px #302c6694;
+}
+
+h3 {
+    text-align: center;
+    color: #F28241;
+    text-shadow: 1px 1px 2px #63351b8e;
+}
+
+p {
+    text-align: justify;
+}

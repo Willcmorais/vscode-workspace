@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-size: 1.1em;
+            /*para negrito*/
+            font-weight: 500;
+            /*para italico*/
+            font-style: italic;
+        }
+
+        h1 {
+                        /*sublinhar*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+
+        div {
+            /*distancia entre linhas*/
+            line-height: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+</body>
+<main>
+    <h1>Trabalhando com fontes</h1>
+    <h2>Acessar o CSS web safe fonts</h2>
+    <a target="_blank" rel="content" href="https://www.w3schools.com/csSref/css_websafe_fonts.php">Acesso ao site
+        w3schools - CSS css_websafe_fonts</a>
+    <h2>Tamanho de fontes e suas medidas</h2>
+    <p>Existem várias formas de colocar um font-size, temos medidas</p>
+    <div class="list1">
+        <ul>
+            <li>Absolutas:</li>
+            <ul>
+                <li>cm, mm, in(polegada), px, pt, pc</li>
+            </ul>
+            <li>Relativas:</li>
+            <ul>
+                <li>em <ul>
+                        <li>medida relativa a altura "M" da fonte</li>
+                    </ul>
+                </li>
+                <li>ex <ul>
+                        <li>medida relativa ao altura "x" da fonte</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>ren, vw (view width, largura da tela), vh (altura da tela), %</li>
+            </ul>
+        </ul>
+    </div>
+    <h3>As medidas podem ser representadas em vários tipos de telas diferentes, então, o mais recomendado para tamanhos
+        de fontes é o "px e em"</h3>
+    <p>O tamanho padrão das letras é de 16px, geralmente, 1em é igual a 16px. O em é mais indicado pois trabalhamos com
+        porcentagem do tamanho da fonte padrão, é útil para diferentes tipos de tela (celular, tv, computador)</p>
+    <h2>Peso, estilo e shorthand font</h2>
+    <p>weight - peso, width - largura e height - altura</p>
+    <p>Os valores aceitos para o weight são</p>
+    <ul>
+        <li>lighter</li>
+        <li>normal</li>
+        <li>bold</li>
+        <li>bolder</li>
+    </ul>
+    <p>Podendo ser utilizado também variações numéricas de 100 em 100 até 900. Algumas letras não tem todas as
+        possibilidaes de configuração de peso, a melhor para trabalhar com isso é a work sans.</p>
+    <p> font-family: 'Work Sans';
+    <p>font-weight: bolder;
+    <p>font-size: 3em;
+    <p>font-style: italic;
+    <p>pode se resumir a uma shorthand "font:..."
+    <p>font-style -> font-weight -> font-size -> font-family</p>
+    <p>Exemplo:
+    <pre><code>h1 {
+        font: italic bolder 3em 'Work Sans', sans-serif;
+    }</code></pre>
+    </p>
+</main>
+
+</html>
