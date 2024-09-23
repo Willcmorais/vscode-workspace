@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        /* div {
+        faz com que a depender do tamanho da tela elas ficam alinhadas ao lado
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }*/
+
+        /*um parágrafo oculto em uma div. > quer dizer que é filho*/
+        div#d1>p {
+            display: none;
+        }
+
+        /*quando passar o mouse em cima o que deve acontecer com o paragagráfo é...*/
+        div#d1:hover>p {
+            display: block;
+        }
+
+        div#d1:hover>p {
+            background-color: blue;
+            display: block;
+        }
+
+        /*A pseudoclasse deve estar atrelada a um elemento ou uma classe. É o estado de um determinado elemento*/
+        /*hover quer dizer quando passar o mouse por cima.*/
+        div#d2:hover {
+            background-color: rgb(255, 251, 0);
+        }
+
+        div#d3:hover {
+            background-color: rgb(255, 0, 212);
+        }
+
+        .img1 {
+            height: 180px;
+            width: 500px;
+        }
+
+        .img2{
+            height: px;
+            width: 500px; 
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>hover quer dizer quando passar o mouse por cima. A pseudoclasse deve estar atrelada a um elemento ou uma classe.
+        É o estado de um determinado elemento.</p>
+    <p>O que criamos abaixo é um protótipo de um menu.</p>
+    <div id="d1">Passe o mouse aqui para ficar azul e abrir contatos
+        <p>Contatos</p>
+
+    </div>
+    <div id="d2">Passe o mouse aqui para ficar amarelo</div>
+    <div id="d3">Passe o mouse aqui para ficar rosa</div>
+    <h1>HTML e CSS box model</h1>
+    <p>Aplicável ao HTML e CSS. Em HTML tudo que é exibido é em forma de caixas, e essas caixas podem ter caixas dentro
+        delas, formando assim uma aninhamento, um tipo de hierarquia entre elas.</p>
+    <ul>
+        <li>Border é a linha que circunda o conteúdo.</li>
+        <li>Padding é o preenchimento do elemento, para que a borda fique distante do conteúdo.</li>
+    </ul>
+    <img class="img1" src="imgs/border-padding.png" alt="border e padding">
+    <ul>
+        <li>Margin(fora do elemento) é um espaço externo da linha que circunda o conteúdo.</li>
+    </ul>
+    <img class="img1" src="imgs/margin.png" alt="margin">
+    <ul>
+        <li>Outline(dentro do elemento) é o contorno dentro da margem.</li>
+    </ul>
+    <img class="img1" src="imgs/outline.png" alt="outline">
+    <h1>Tipos de caixas</h1>
+    <h2>box-level e inline-level</h2>
+    <ul>
+        <li>O box level sempre se inicia em uma linha nova e sempre ocupa 100% da viewport.</li>
+        <img class="img2" src="imgs/tipos-caixas.png" alt="tipos de caixas">
+        <li>O inline level não quebra linha, continua na mesma linha e o tamanho é precisa.</li>
+    </ul>
+</body>
+
+</html>

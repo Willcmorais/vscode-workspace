@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes com Google Fontes</title>
+    <link rel="stylesheet" href="../ex022-trab-fontes/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+        @font-face {
+            font-family: 'Rusilla';
+            src: url('fonts/Rusillaserif-Regular.ttf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /*
+        Tipos de format()
+        -opentype(otf)
+        -truetype(ttf)
+        -embedded-opentype
+        -truetype-aat (apple adnvaced typography)
+        */
+
+        h1 {
+            font-family: 'Protest Guerrilla';
+        }
+
+        h2 {
+            font-family: 'Rusilla';
+        }
+
+        h3{
+            text-align: left;
+        }
+
+        p {
+            font-family: 'Lilita One', sans-serif;
+            /*parágrafo*/
+            text-indent: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Utilizando o google fonts</h1>
+        <h3>Inserindo fontes externas</h3>
+        <p>
+        <h2>Título exemplo</h2>
+        <ul>
+            <li>acessar ao <a target="_blank" href="https://fonts.google.com/">google fonts</a> e importar alguma fonte
+                que queira com o @import</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores exercitationem ipsum id quia odio veniam
+            quidem
+            molestias. Fugit voluptatibus, id odio voluptatum possimus accusamus, aliquam accusantium maiores harum,
+            officia
+            perspiciatis.</p>
+        </p>
+        <h2>Usando fontes externas baixadas</h2>
+        <ul>
+            <li>Acessar ao <a href="https://www.dafont.com/pt/">dafont.com</a></li>
+            <li>Procurar fontes que tenham acentuações</li>
+            <li>baixar a fonte e utilizar a excessão @font-face</li>
+        </ul>
+        <pre><code>       @font-face {
+            font-family: 'Rusilla';
+            /*O atalho precisa ser para o diretório que está a fonte*/
+            src: url('fontes\ google/Rusillaserif-Light.ttf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }</code></pre>
+        <ul>
+            <li>Para saber qual fonte no texto de um site, utilizar a extensão fonts ninja</li>
+            <li>Para saber qual a fonte dentro de uma imagem, utilizar os sites:</li>
+            <ul>
+                <li><a target="_blank" href="https://www.whatfontis.com/">whatfontis.com</a></li>
+                <li><a target="_blank" href="https://www.fontsquirrel.com/">fontsquirrel.com</a></li>
+                <li><a target="_blank"
+                        href="https://www.myfonts.com/?srsltid=AfmBOoqD249bMXXE3aAqUNtFxpghcvK_L9I1sHex61LDFPNnCfxZUqx6">myfonts.com</a>
+                </li>
+            </ul>
+        </ul>
+        <h2>Alinhamento de fontes com CSS</h2>
+        <h3>Tipos de alinhamentos</h3>
+    </main>
+</body>
+
+</html>

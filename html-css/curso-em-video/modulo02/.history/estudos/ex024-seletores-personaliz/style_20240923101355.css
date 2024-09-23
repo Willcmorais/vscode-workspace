@@ -1,0 +1,92 @@
+@charset "utf8";
+
+* {
+    /*safe combination, ele usa a primeira letra q achar*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(-120deg, #260101, #275950, #9BF2EA);
+    background-attachment: fixed;
+}
+
+img {
+    /* As imagens são inline por padrão, então precisamos torná-las block */
+    display: block;
+    /* Centraliza horizontalmente */
+    margin: 0 auto;
+}
+
+main {
+    background-color: white;
+    /*arredonda as bordas*/
+    border-radius: 10px;
+    /*1 parametro é o lado da sombra, 2 é para baixo, 3 é o quanto espalha e 4 o quanto de transparência tem(ou cor)*/
+    box-shadow: 5px 5px 15px rgba(38, 1, 1, 0.619);
+    /*largura do recorte*/
+    width: 600px;
+    /*distancia das bordas com o conteúdo*/
+    padding: 20px;
+    /*altera automaticamente a margem para o centro da tela*/
+    margin: auto;
+}
+
+/*identificador*/
+h1#principal {
+    font: italic bolder 3em 'Rusilla';
+    text-align: center;
+    color: #260101;
+    background-image: linear-gradient(-120deg, #260101, #275950, #9BF2EA);
+    border-radius: 10px;
+    /*mesmos parametros para o box-shadow*/
+    text-shadow: 1px 1px 2px rgba(38, 1, 1, 0.615);
+}
+
+.principal {
+    font: italic bold 2em 'Rusilla';
+    text-align: center;
+    color: #260101;
+    background-image: linear-gradient(-120deg, #9BF2EA, #275950, #260101);
+    border-radius: 30px;
+    /*mesmos parametros para o box-shadow*/
+    text-shadow: 1px 1px 2px rgba(38, 1, 1, 0.615);
+}
+
+/*classe*/
+.basico {
+    font: italic bold 2em 'Rusilla';
+    color: #01ce19;
+    border-radius: 30px;
+    /*mesmos parametros para o box-shadow*/
+    text-shadow: 1px 1px 2px rgba(38, 1, 1, 0.615);
+}
+
+.avancado {
+    font: italic bold 2em 'Rusilla';
+    color: #a45b5b;
+    border-radius: 30px;
+    /*mesmos parametros para o box-shadow*/
+    text-shadow: 1px 1px 2px rgba(38, 1, 1, 0.615);
+}
+
+h1 {
+    text-align: center;
+    color: #260101;
+    /*mesmos parametros para o box-shadow*/
+    text-shadow: 1px 1px 2px rgba(38, 1, 1, 0.615);
+}
+
+h2 {
+    color: #260101;
+    text-shadow: 1px 1px 2px rgba(38, 1, 1, 0.615);
+}
+
+h3 {
+    text-align: center;
+    color: #260101;
+    text-shadow: 1px 1px 2px rgba(38, 1, 1, 0.615);
+}
+
+p {
+    text-align: justify;
+}
