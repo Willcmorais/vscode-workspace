@@ -1,0 +1,14 @@
+@charset "utf8";
+
+h1 {
+    /*alteração no css para alterar a box-level padrão*/
+    background-color: aquamarine;
+    height: 200px;
+    width: 300px;
+    border-width: solid;
+    border-color: ;
+}
+
+img {
+    height: 430px;
+}

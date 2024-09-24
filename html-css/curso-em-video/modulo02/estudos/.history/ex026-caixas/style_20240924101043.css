@@ -1,0 +1,12 @@
+@charset "utf8";
+
+h1 {
+    /*alteração no css para alterar a box-leve padrão*/
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+}
+
+img {
+    height: 430px;
+}

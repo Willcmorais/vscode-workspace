@@ -1,0 +1,25 @@
+@charset "utf8";
+
+h1 {
+    /*alteração no css para alterar a box-level padrão*/
+    background-color: aquamarine;
+    height: 200px;
+    width: 300px;
+    padding: 30px 10px;
+    margin: 30px 10px;
+    border: 20 groove darkslategrey;
+    outline: 20 groove darkslategrey;
+}
+a {
+    border-width: 10px;
+    border-style: solid;
+    border-color: blueviolet;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+
+img {
+    height: 430px;
+}
