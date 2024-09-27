@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Manipulação de dados</title>
+</head>
+
+<body>
+
+  <main>
+    <h1>Manipulação de Dados</h1>
+    <h2>Código exemplo para prompt</h2>
+    <p>
+      A variável 'numero' recebe o resultado do prompt do que aparecer na janela
+    </p>
+    <p>Uma característica do comando window.prompt é que ele retorna uma string, então, sempre que utilizamos o + para
+      somar ele vai concatenar. Para somar utilizamos uma conversão de tipo.</p>
+
+    <script>
+      //se quisermos forçar um numero int
+      var n1 = Number.parseInt(window.prompt("Digite um número"))
+      //funciona quando tanto faz o número
+      var n2 = Number(window.prompt("Digite outro número"))
+      s = n1 + n2
+      //+ para concatenar (string + string) ou + para adicionar (number + number)
+      window.alert("A soma dos números digitados foi " + s)
+    </script>
+
+    <ul>
+      <li>var nome = window.prompt("Informe seu nome:");</li>
+      <li>Number.parseInt(n). Hoje utilizamos apenas <b>Number(n)</b></li>
+      <ul>
+        <li>Antes de jogar na variável transforma o que for digitado em um tipo number</li>
+      </ul>
+      <li>Para converter algo para string usamos o <b>String(n) ou n.toString</b></li>
+    </ul>
+
+    <p>Mostra o que foi digitado</p>
+
+    <ul>
+      <li>window.alert("O nome digitado foi " + nome);</li>
+      <li>O + tem sentido de concatenar (number + number) ou (string + string)</li>
+      <li>A forma abaixo de forma de trabalhar a formatação de strings com '{}' e um place holder '$'</li>
+    </ul>
+    <img src="imgs/place-holder.png" alt="place holder">
+    <img src="imgs/node-exemplo.png" alt="exemplo node">
+    <h2></h2>
+    <h2></h2>
+  </main>
+</body>
+
+</html>

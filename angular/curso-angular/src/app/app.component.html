@@ -1,4 +1,4 @@
-<!--aqui vamos colocar toda a parte do html bruto-->
+<!--aqui vamos colocar toda a parte do html bruto. COMPONENTE PAI!-->
 <h1>Hello world em Angular!!</h1>
 <h2>Alguma coisa</h2>
 <h2>Testando H2</h2>
@@ -21,3 +21,5 @@
   <a href="#">Clique aqui!</a>
 </div>
 <app-first-component></app-first-component>
+<!-- chamado de userName no pai mas name no filho em parentdata.ts -->
+<app-parent-data [name] = "userName" [userData]="userData"></app-parent-data>
