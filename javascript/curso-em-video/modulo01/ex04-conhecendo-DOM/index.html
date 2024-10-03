@@ -11,9 +11,9 @@
 <body>
     <main>
         <h1>Introdução a DOM - Document Object Model</h1>
-        <div>
+        <div id="principal">
             <h2>DOM é um modelo de objetos para documentos</h2>
-            <p>Basicamente é um conjunto de objetos dentro do navegador que vai
+            <p>Basicamente é um <b>conjunto de objetos dentro do navegador</b> que vai
                 dar acesso aos componentes internos do site.</p>
         </div>
 
@@ -25,7 +25,7 @@
                 window. Dentro de window temos vários outro objetos:</p>
             <ul>
                 <li><b>location</b></li>
-                <ul type="">
+                <ul>
                     <li>Qual é a localização do site, URL, qual a página atual e a anterior</li>
                     <li>Em documento teremos o objeto HTML <b>(child de location e parent de head e body)</b> com dois
                         objetos
@@ -55,6 +55,7 @@
         <div>
             <p>Podemos selecionar esses elementos para navegar na minha árvore DOM</p>
             <img class="img1" src="imgs/selecao.png" alt="selecao">
+            <p>O <b>getElementsByTagName()</b> é um método que seleciona mais de um objeto se não especificarmos.</p>
             <p>O conteúdo abaixo está sendo inserido por uma seleção do objeto 'p' pelo comando</p>
             <pre><code>var p1 = window.document.getElementsByTagName('p')[0]
                window.document.write(p1.innerText)</code></pre>
@@ -65,7 +66,28 @@
         </div>
         <script>
             var p1 = window.document.getElementsByTagName('p')[0]
+            //vai sem formatação
             window.document.write(p1.innerText)
+            //vai a formatação completa com os detalhes da tag
+            window.document.write(p1.innerHTML)
+        </script>
+        <p>Podemos também utilizar os:</p>
+        <ul>
+            <li><b>getElementById()</b></li>
+            <li><b>getElementsByName()[]</b></li>
+            <li><b>getElementsByClassName()[]</b></li>
+        </ul>
+        <p>Para transmitir o que está abaixo foi feito dessa forma:</p>
+        <p>a principal é o nome do id da div que foi mostrada em tela</p>
+        <pre><code>var d = window.document.getElementById('principal')
+            window.document.write(d.innerHTML)</code></pre>
+        <script>
+            var d = window.document.getElementById('principal')
+            //para modificar o que tem na variável
+            //d.innerText = 'Estou aprendendo...'
+            //window.document.getElementById('principal').innerText = 'Olá'
+            window.document.write(d.innerHTML)
+            d.style.background = 'green'
         </script>
     </main>
 </body>
