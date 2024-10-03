@@ -55,12 +55,17 @@
         <div>
             <p>Podemos selecionar esses elementos para navegar na minha árvore DOM</p>
             <img class="img1" src="imgs/selecao.png" alt="selecao">
-            <p>O conteúdo abaixo está sendo inserido por uma seleção do objeto 'p' pelo comando dado</p>
+            <p>O conteúdo abaixo está sendo inserido por uma seleção do objeto 'p' pelo comando</p>
+            <pre><code>var p1 = window.document.getElementsByTagName('p')[0]
+               window.document.write(p1.innerText)</code></pre>
+            <p><b>Tradução:</b>A variável p1 recebe como um documento de txt na tela o que estiver na tag ('p')[0]
+                (Primeiro parágrafo do documento).</p>
+            <p>Na tela receberemos um documento informando (o que p1 recebeu acima de valor)</p>
+            <p>Primeiro parágrafo novamente reproduzido abaixo com o script</p>
         </div>
         <script>
             var p1 = window.document.getElementsByTagName('p')[0]
             window.document.write(p1.innerText)
-            window.document.write(window.document.URL)
         </script>
     </main>
 </body>
