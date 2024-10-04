@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eventos DOM</title>
+</head>
+
+<body>
+    <h1>Eventos DOM</h1>
+    <h2>Eventos:</h2>
+    <p>Tudo aquilo que possa acontecer com o meu elemento, no caso a tag DIV.</p>
+    <p>O que pode acontecer com essa DIV? O mais comum são <b>eventos de mouse</b></p>
+    <p><b>Analisando o código....</b> Quando eu clicar na minha div será criado um objeto chamado 'a' e ele vai ser uma
+        ligação do objeto 'a' do JavaScript com o objeto de id 'area' que está dentro do HTML</p>
+
+    <pre>
+        <code>
+            div id="area" onclick="clicar()">
+           interaja...
+           /div
+        </code>
+    </pre>
+
+    <div id="area" onclick="clicar()">
+        interaja...
+    </div>
+
+    <pre>
+        <code>
+            script
+                function clicar() {
+                    var a = window.document.getElementById('area')
+                    a.innerText = 'Clicou!'
+                }
+            /script
+        </code>
+    </pre>
+
+    <script>
+        function clicar() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Clicou!'
+        }
+    </script>
+
+    <p>Alguns tipos de eventos que podem acontecer com o mouse na DIV</p>
+    <li><b>mouseenter:</b> Momento em que o mouse entra na div</li>
+    <li><b>mousemove:</b> Dispara sempre que o mouse é movido dentro da div</li>
+    <li><b>mousedown:</b> Quando aperta e segura o botão do mouse</li>
+    <li><b>mouseup:</b> Quando está segurando o botão e solta</li>
+    <li><b>click:</b> Quando o movimento é de click único</li>
+    <li><b>mouseout:</b> Quando o mouse sai da div</li>
+    <img src="imgs/eventos.png" alt="eventos">
+
+    <h2>Funções ou Funcionalidades:</h2>
+    <p>Conjunto de códigos que vão ser executados só quando o evento ocorrer. Esses códigos estarão em <b>blocos</b></p>
+    <img src="imgs/funcao.png" alt="funcao">
+</body>
+
+</html>

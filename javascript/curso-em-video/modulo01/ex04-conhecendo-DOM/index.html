@@ -23,32 +23,32 @@
             <img class="img1" src="imgs/arvore-dom.png" alt="arvore dom">
             <p>Basicamente começa da Raiz e a raiz a gente chama de <b>window</b>. Tudo que está no javaScript está em
                 window. Dentro de window temos vários outro objetos:</p>
+
+            <li><b>location</b></li>
             <ul>
-                <li><b>location</b></li>
+                <li>Qual é a localização do site, URL, qual a página atual e a anterior</li>
+            </ul>
+            <li><b>document</b></li>
+            <ul>
+                <li>Usamos muito, será o documento atual</li>
+                <li>Em documento teremos o objeto HTML <b>(child de location e parent de head e body)</b> com dois
+                    objetos
+                </li>
                 <ul>
-                    <li>Qual é a localização do site, URL, qual a página atual e a anterior</li>
-                    <li>Em documento teremos o objeto HTML <b>(child de location e parent de head e body)</b> com dois
-                        objetos
-                    </li>
+                    <li>head (child de HTML)</li>
                     <ul>
-                        <li>head (child de HTML)</li>
-                        <ul>
-                            <li>No nosso documento head teremos várias tags: <b>meta, title</b></li>
-                        </ul>
-                        <li>body (child de HTML)</li>
-                        <ul>
-                            <li>No nosso documento body teremos várias tags: <b>h1, h2, p, div...</b></li>
-                        </ul>
+                        <li>No nosso documento head teremos várias tags: <b>meta, title</b></li>
+                    </ul>
+                    <li>body (child de HTML)</li>
+                    <ul>
+                        <li>No nosso documento body teremos várias tags: <b>h1, h2, p, div...</b></li>
                     </ul>
                 </ul>
-                <li><b>document</b></li>
-                <ul>
-                    <li>Usamos muito, será o documento atual</li>
-                </ul>
-                <li><b>history</b></li>
-                <ul>
-                    <li>Guarda de onde viemos para onde vamos no site</li>
-                </ul>
+            </ul>
+
+            <li><b>history</b></li>
+            <ul>
+                <li>Guarda de onde viemos para onde vamos no site</li>
             </ul>
         </div>
 
@@ -72,13 +72,18 @@
             window.document.write(p1.innerHTML)
         </script>
         <p>Podemos também utilizar os:</p>
+        <div></div>
         <ul>
+            <li><b>querySelector() ou querySelectorAll()</b></li>
+            <ul>
+                <li>É o mais recomendável de se utilizar, faz a seleção através de elementos css.</li>
+            </ul>
             <li><b>getElementById()</b></li>
             <li><b>getElementsByName()[]</b></li>
             <li><b>getElementsByClassName()[]</b></li>
         </ul>
         <p>Para transmitir o que está abaixo foi feito dessa forma:</p>
-        <p>a principal é o nome do id da div que foi mostrada em tela</p>
+        <p>a 'principal' é o nome do id da div que foi mostrada em tela</p>
         <pre><code>var d = window.document.getElementById('principal')
             window.document.write(d.innerHTML)</code></pre>
         <script>
