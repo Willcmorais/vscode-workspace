@@ -1,31 +1,14 @@
 @charset "UTF8";
 
-* {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+body {
+  font: normal 18px Arial;
 }
 
-h1 {
-  font: bold 40px Arial;
-  text-align: center;
-  text-decoration: underline;
+input {
+  font: normal 18px Arial;
+  width: 100px;
 }
 
-h2 {
-  font: bold 30px Arial;
-}
-
-div#area {
-  font: normal 20px Arial;
-  background: goldenrod;
-  color: white;
-  width: 200px;
-  height: 200px;
-  line-height: 200px;
-  text-align: center;
-}
-
-img {
-  display: block;
-  height: 300px;
-  margin: 10px auto;
+div#res {
+  margin-top: 20px;
 }

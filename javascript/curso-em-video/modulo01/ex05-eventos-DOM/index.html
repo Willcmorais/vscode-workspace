@@ -24,9 +24,28 @@
         </code>
     </pre>
 
-    <div id="area" onclick="clicar()">
+    <div id="area">
         interaja...
     </div>
+
+    <script>
+        //colocando a var fora ela pode ser utilizada por todas as functions
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+        }
+    </script>
 
     <pre>
         <code>
@@ -39,13 +58,6 @@
         </code>
     </pre>
 
-    <script>
-        function clicar() {
-            var a = window.document.getElementById('area')
-            a.innerText = 'Clicou!'
-        }
-    </script>
-
     <p>Alguns tipos de eventos que podem acontecer com o mouse na DIV</p>
     <li><b>mouseenter:</b> Momento em que o mouse entra na div</li>
     <li><b>mousemove:</b> Dispara sempre que o mouse é movido dentro da div</li>
@@ -54,6 +66,10 @@
     <li><b>click:</b> Quando o movimento é de click único</li>
     <li><b>mouseout:</b> Quando o mouse sai da div</li>
     <img src="imgs/eventos.png" alt="eventos">
+    <h3>Para limpar a área HTML podemos fazer da seguinte forma esse código abaixo:</h3>
+    <img src="imgs/ex.png" alt="exemplo 1">
+    <h3>Disparamos os eventos por listeners que ficam observando o que acontece dentro do javascript</h3>
+    <img src="imgs/ex1.png" alt="exemplo 2">
 
     <h2>Funções ou Funcionalidades:</h2>
     <p>Conjunto de códigos que vão ser executados só quando o evento ocorrer. Esses códigos estarão em <b>blocos</b></p>
