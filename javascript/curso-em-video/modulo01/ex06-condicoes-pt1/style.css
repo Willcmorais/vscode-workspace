@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(255, 0, 81);
+  margin: 30px 100px;
+  padding: 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font: normal 18px Arial;
+}
+
+img {
+  margin: auto 7px;
+}
+
+input {
+  text-align: right;
+  font: normal 20px Arial;
+  height: 20px;
+}

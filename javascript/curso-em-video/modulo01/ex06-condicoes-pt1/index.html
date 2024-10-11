@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Condições Pt 1</title>
+</head>
+
+<body>
+    <main>
+        <h1>Sequências e Condições:</h1>
+        <p>Quando temos um código sequêncial a ordem do que é feito importa, como no exemplo abaixo, a variável n
+            precisa
+            aparecer antes para ser adicionado um valor a ela e o valor final dela ser exposto em tela. Os desvios
+            condicionais fazem com que nesse código tenhamos dois desvios, um caso o evento aconteça e outro caso ele
+            não aconteça. Quando não temos o <b>Else</b> chamamos de condição simples.</p>
+        <img src="imgs/sequencias.png" alt="Sequências">
+        <img src="imgs/desvio-condic.png" alt="desvio condicional">
+        <img src="imgs/desvio-condic1.png" alt="desvio condicional1">
+
+        <h1>DETRAN</h1>
+        <h2>Sistema de multas</h2>
+        <p>Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h</p>
+        <input type="button" value="Verificar" onclick="calcular()">
+        <script>
+            var txtv = window.document.querySelector('input#txtvel')
+
+            function calcular() {
+                var vel = Numb(txtv.value)
+            }
+        </script>
+    </main>
+</body>
+
+</html>
