@@ -19,12 +19,26 @@ p {
   font: normal 18px Arial;
 }
 
+p#p1 {
+  width: 500px;
+}
+
 img {
   margin: auto 7px;
 }
 
 input {
+  font: normal 20px Arial;
+  height: 20px;
+}
+
+input#inpnumb {
   text-align: right;
   font: normal 20px Arial;
   height: 20px;
+}
+
+input#verif {
+  font: normal 15px Arial;
+  height: 30px;
 }

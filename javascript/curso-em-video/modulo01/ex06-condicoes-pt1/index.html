@@ -22,13 +22,46 @@
 
         <h1>DETRAN</h1>
         <h2>Sistema de multas</h2>
-        <p>Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h</p>
-        <input type="button" value="Verificar" onclick="calcular()">
-        <script>
-            var txtv = window.document.querySelector('input#txtvel')
 
+        <!-- No código abaixo o input abre uma caixa para adicionar números com id txtvel. O input button vai criar um botão que ao clique
+          vai acionar a função em javascript de calcular -->
+        <p id="p1">Velocidade do carro: <input id="inpnumb" type="number" name="txtvel" id="txtvel"> km/h</p>
+        <input id="verif" type="button" value="Verificar" onclick="calcular()">
+        <div id="res"></div>
+
+        <script>
+            //A variável txtv recebe o que o input txtvel receber.
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+
+            // A variável vel recebe o valor que estiver em txtv e transforma de string para number 
             function calcular() {
-                var vel = Numb(txtv.value)
+                var vel = Number(txtv.value)
+                res.innerHTML = `<p>Sua velocidade atual é de <b>${vel}Km/h</b></p>`
+                //concatena um valor novo dentro da variável (string concatena com +)
+                res.innerHTML += '<p>Dirija sempre com cinto de segurança!</p>'
+                if (vel > 80) {
+                    res.innerHTML += '<p>Você foi <b>MULTADO</b> por excesso de velocidade!</p>'
+                }
+            }
+        </script>
+
+        <h1>Qual é a sua nacionalidade?</h1>
+        <h2>Sistema de conversão de nacionalidade</h2>
+        <p>Informe no campo abaixo em que país você nasceu:</p>
+        <input type="text">
+        <input id="verif" type="button" value="Verificar" onclick="mostrar()">
+        <div id="res1"></div>
+
+        <script>
+            function(mostrar) {
+                var txt = window.document.querySelector('text')
+                var res1 = window.documento.querySelector('res1')
+                if (txt == Brasil) {
+                    res1.innerHTML(`Legal, já que você nasceu no ${txt} isso quer dizer que é <b>Brasileiro</b>`)
+                } else {
+                    res1.innerHTML(`Legal, já que você não nasceu em ${txt} isso quer dizer que você é <b>Estrangeiro</b>`)
+                }
             }
         </script>
     </main>
