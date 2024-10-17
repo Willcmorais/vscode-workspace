@@ -38,7 +38,7 @@ input#txtvel {
   height: 20px;
 }
 
-input#verif {
+input.verif {
   font: normal 15px Arial;
   height: 30px;
 }

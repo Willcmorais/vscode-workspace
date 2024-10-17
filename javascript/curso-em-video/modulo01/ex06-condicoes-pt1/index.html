@@ -26,13 +26,13 @@
         <!-- No código abaixo o input abre uma caixa para adicionar números com id txtvel. O input button vai criar um botão que ao clique
           vai acionar a função em javascript de calcular -->
         <p id="p1">Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h</p>
-        <input id="verif" type="button" value="Verificar" onclick="calcular()">
-        <div id="res"></div>
+        <input class="verif" type="button" value="Verificar" onclick="calcular()">
+        <div class="res"></div>
 
         <script>
             //A variável txtv recebe o que o input txtvel receber.
             var txtv = window.document.querySelector('input#txtvel')
-            var res = window.document.querySelector('div#res')
+            var res = window.document.querySelector('div.res')
 
             // A variável vel recebe o valor que estiver em txtv e transforma de string para number 
             function calcular() {
