@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Qual é a sua nacionalidade?</h1>
+    <h2>Sistema de conversão de nacionalidade</h2>
+    <p>Informe no campo abaixo em que país você nasceu:</p>
+    <input type="text" name="txtnac" id="txtnac">
+    <input id="verif" type="button" value="Verificar" onclick="mostrar()">
+    <div id="res"></div>
+
+    <script>
+        function mostrar() {
+            var txt = window.document.querySelector('input#txtnac')
+            var result = window.document.querySelector('div#res')
+            if (txt == Brasil) {
+                result.innerHTML += `<p>Legal, já que você nasceu no ${txt} isso quer dizer que é <b>Brasileiro</b></p>`
+            } else {
+                result.innerHTML += `<p>Legal, já que você não nasceu em ${txt} isso quer dizer que você é <b>Estrangeiro</b></p>`
+            }
+        }
+    </script>
+</body>
+
+</html>
